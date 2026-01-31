@@ -21,7 +21,7 @@ public class MenuController : MonoBehaviour
     {
         Vector3 mousePos=Input.mousePosition;
         Mask.anchoredPosition = mousePos;
-        Panel.anchoredPosition =new Vector2(centerPos.x-mousePos.x,centerPos.y-mousePos.y); ;
+        Panel.anchoredPosition =new Vector2(centerPos.x-mousePos.x+Mask.rect.width/2,centerPos.y-mousePos.y+Mask.rect.height/2); ;
     }
 
     private void OnStart()
